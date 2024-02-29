@@ -7,6 +7,7 @@
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
+    <h1 class="title">Welcome to Tic-Tac-Toe!</h1>
     <div class="board">
             <div class="board-item">1</div>
             <div class="board-item">2</div>
@@ -18,5 +19,12 @@
             <div class="board-item">8</div>
             <div class="board-item">9</div>
     </div>
+    <dialog id="playerMovePrompt">
+        <h2>Please choose your move:</h2>
+        <button class="action"><object id="X" data="data/svg/x-symbol-svgrepo-com.svg" width="20" height="20"></object></button>
+        <button class="action"><object id="O" data="data/svg/circle-svgrepo-com.svg" width="20" height="20"></object></button>
+    </dialog>
+    <script src="./src/index.js"></script>
 </body>
+
 </html>
