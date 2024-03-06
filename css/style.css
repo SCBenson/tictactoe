@@ -2,7 +2,11 @@
     --color-cells: white;
     --color-backsplash: #38bdf8;
 }
-
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
 .board{
     display: grid;
     align-content: center;
@@ -16,20 +20,38 @@
 }
 
 .board-item {
-    display: grid;
+
     height: 200px;
     width: 200px;
     border: 5px solid var(--color-backsplash);
     background-color: var(--color-cells);
     align-items: center;
     justify-items: center;
-
 }
 
 .board-item:hover{
     background-color: azure;
     transition: 0.3s;
     cursor:pointer;
+}
+
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 650px;
+    border: 3px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.settings-container > div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.player {
+    display: flex;
 }
 
 dialog {
@@ -51,4 +73,9 @@ dialog {
 .board-item:nth-child(n + 7) {
     border-bottom: none;
     border-top:none;
+}
+
+#tokenSelect {
+    height: 50px;
+    width: 50px;
 }
