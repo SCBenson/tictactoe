@@ -8,21 +8,38 @@
 </head>
 <body>
     <h1 class="title">Welcome to Tic-Tac-Toe!</h1>
-    <div class="board">
-            <div class="board-item">1</div>
-            <div class="board-item">2</div>
-            <div class="board-item">3</div>
-            <div class="board-item">4</div>
-            <div class="board-item"><object id="X" data="data/svg/x-symbol-svgrepo-com.svg" width="190" height="190"></object></div>
-            <div class="board-item">6</div>
-            <div class="board-item">7</div>
-            <div class="board-item">8</div>
-            <div class="board-item">9</div>
+    <div class="container">
+        <div class="board">
+                <div class="board-item">1</div>
+                <div class="board-item">2</div>
+                <div class="board-item">3</div>
+                <div class="board-item">4</div>
+                <div class="board-item"><object id="X" data="data/svg/x-symbol-svgrepo-com.svg" width="195" height="195"></object></div>
+                <div class="board-item">6</div>
+                <div class="board-item">7</div>
+                <div class="board-item">8</div>
+                <div class="board-item">9</div>
+        </div>
+        <div class="settings-container">
+            <h2>Create a game.</h2>
+            <div class="player">
+                <p>Player 1:</p>
+                <button id="tokenSelect"><object  data="data/svg/x-symbol-svgrepo-com.svg" width="20" height="20"></object></button>
+                <button id="tokenSelect"><object data = "data/svg/circle-svgrepo-com.svg" width="20" height="20"></object></button>    
+            </div>
+            <div class="player">
+                <p>Player 2:</p>
+                <button id="tokenSelect"><object data="data/svg/x-symbol-svgrepo-com.svg" width="20" height="20"></object></button>
+                <button id="tokenSelect"><object data = "data/svg/circle-svgrepo-com.svg" width="20" height="20"></object></button>
+            </div>
+        </div>
     </div>
+    
+    
     <dialog id="playerMovePrompt">
         <h2>Please choose your move:</h2>
-        <button class="action"><object id="X" data="data/svg/x-symbol-svgrepo-com.svg" width="20" height="20"></object></button>
-        <button class="action"><object id="O" data="data/svg/circle-svgrepo-com.svg" width="20" height="20"></object></button>
+        <button class="action"><object id="selectMoveX" data="data/svg/x-symbol-svgrepo-com.svg" width="20" height="20"></object></button>
+        <button class="action"><object id="selectMoveO" data="data/svg/circle-svgrepo-com.svg" width="20" height="20"></object></button>
     </dialog>
     <script src="./src/index.js"></script>
 </body>
