@@ -34,7 +34,8 @@
     transition: 0.3s;
     cursor:pointer;
 }
-
+/*------------------------*/
+/* Settings menu */
 .settings-container {
     display: flex;
     flex-direction: column;
@@ -47,13 +48,21 @@
 .settings-container > div {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    align-items: center;
+    column-gap: 10px;
 }
 
 .player {
     display: flex;
+
 }
 
+#tokenSelect {
+    height: 30px;
+    width: 30px;
+}
+/*------------------------*/
+/* Dialog */
 dialog {
     width: 300px;
     height: 300px;
@@ -75,7 +84,30 @@ dialog {
     border-top:none;
 }
 
-#tokenSelect {
-    height: 50px;
-    width: 50px;
+.score-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    justify-items: center;
+    height: 100px;
+    width: 600px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black; 
+}
+
+.score-container > p {
+    display: flex;
+    font-size: 32px;
+}
+
+#p1{
+    color: red;
+}
+#p2{
+    color: blue;
+}
+
+span{
+    color: black;
+    white-space: pre;
 }
